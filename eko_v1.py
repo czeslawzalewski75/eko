@@ -46,10 +46,7 @@ def user_input_features():
 
 
 df = pd.read_pickle('df_row.pickle')
-if df is None:
-    pass
-
-df_row = df.copy(deep=True)
+df_row = df
 
 # prediction data
 df_prediction = user_input_features()
