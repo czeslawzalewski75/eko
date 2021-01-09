@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import random
-import shap
 import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestRegressor
 import pickle
