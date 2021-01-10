@@ -44,8 +44,12 @@ def user_input_features():
 
 # Main Panel
 
+@st.cache
+def load_data_row():
+    data = pd.read_pickle('df_row.pickle')
+    return data
 
-df = pd.read_pickle('df_row.pickle')
+df = load_data_row
 
 
 # prediction data
@@ -84,7 +88,7 @@ st.header('Prognoza ceny biletu')
 st.write(f"{round(prediction[0],2)} zł")
 st.write('---')
 
-df_row = pd.read_pickle('df_row.pickle')
+df_row = load_data_row
 st.header('Dane użyte treningu modelu')
 st.write(df_row)
 st.write('---')
