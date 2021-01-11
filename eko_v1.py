@@ -88,7 +88,7 @@ st.header('Prognoza ceny biletu')
 st.write(f"{round(prediction[0],2)} zł")
 st.write('---')
 
-df_row = load_data_row
-st.header('Dane użyte treningu modelu')
-st.write(df_row)
-st.write('---')
+# df_row = load_data_row
+# st.header('Dane użyte treningu modelu')
+# st.write(df_row)
+# st.write('---')
